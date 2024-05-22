@@ -2,25 +2,25 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export class NewsItem extends Component {
-  static propTypes = {};
+  
 
   render() {
-    let {title, description} = this.props;
+    let {title, description, imageUrl, newsUrl} = this.props;
     return (
-      <div>
+      <di className="my-3">
         <div className="card" style={{width: "18rem"}}>
-          <img src="..." className="card-img-top" alt="..." />
+          <img src={imageUrl} />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">
               {description}
             </p>
-            <a href="/newsdetail" className="btn btn-primary">
+            <a href="/newsdetail" className="btn btn-sm btn-primary">
               Go somewhere
             </a>
           </div>
         </div>
-      </div>
+      </di>
     );
   }
 }
