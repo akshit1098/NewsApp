@@ -7,20 +7,21 @@ export class NewsItem extends Component {
   render() {
     let {title, description, imageUrl, newsUrl} = this.props;
     return (
-      <di className="my-3">
+      <div className="my-3">
         <div className="card" style={{width: "18rem"}}>
           <img src={imageUrl} />
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">
-              {description}
+              {description}...
             </p>
-            <a href="/newsdetail" className="btn btn-sm btn-primary">
+            {/* target="_blank" opens in new tab the specified link */}
+            <a href={newsUrl} target="_blank" className="btn btn-sm btn-primary">
               Go somewhere
             </a>
           </div>
         </div>
-      </di>
+      </div>
     );
   }
 }
