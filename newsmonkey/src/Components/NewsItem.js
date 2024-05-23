@@ -16,7 +16,7 @@ export class NewsItem extends Component {
               {description}...
             </p>
             {/* target="_blank" opens in new tab the specified link */}
-            <a href={newsUrl} target="_blank" className="btn btn-sm btn-primary">
+            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
               Go somewhere
             </a>
           </div>
