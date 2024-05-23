@@ -9,7 +9,7 @@ export class NewsItem extends Component {
     return (
       <div className="my-3">
         <div className="card" style={{width: "18rem"}}>
-          <img src={imageUrl} />
+          <img src={imageUrl?imageUrl:"https://www.livemint.com/lm-img/img/2024/05/21/1600x900/Ircon_1716297501791_1716297502161.jpg"} />
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">
